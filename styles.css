@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #b6de90;
-    color: white;
+    color: #333;
     padding: 10px 0;
     text-align: center;
 }
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none; /* ここでアンダーラインを削除 */
 }
 
@@ -47,7 +47,7 @@ section {
 
 footer {
     background-color: #b6de90;
-    color: white;
+    color: #333;
     text-align: center;
     padding: 10px 0;
 }
@@ -67,7 +67,7 @@ footer {
 /* インタラクティブ要素 */
 button {
     background-color: #b6de90;
-    color: white;
+    color: #333;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -80,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: white;
+    background-color: #333;
     color: black;
     border: 2px solid #b6de90;
 }
