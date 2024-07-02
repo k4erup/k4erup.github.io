@@ -92,10 +92,12 @@ footer {
 .profile-details dt {
     font-weight: bold;
     margin-top: 10px;
+    text-align: left;
 }
 
 .profile-details dd {
     margin: 0 0 10px 0;
+    text-align: left;
 }
 
 /* レスポンシブデザイン */
