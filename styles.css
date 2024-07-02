@@ -76,7 +76,7 @@ img {
 
 .footer-social img {
     width: 24px;
-    height: 24px;
+    height: auto; /* ここを変更 */
 }
 
 /* プロフィール画像と詳細 */
