@@ -76,21 +76,19 @@ footer {
 }
 
 /* プロフィール画像と詳細 */
+.profile-container {
+    display: flex;
+    align-items: flex-start; /* 左揃え */
+}
+
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .profile-details {
-    text-align: left;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.profile-details dt, .profile-details dd {
-    text-align: left; /* dtとdd両方に左揃えを適用 */
     margin: 0;
 }
 
@@ -112,6 +110,16 @@ footer {
 
     section {
         padding: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 
