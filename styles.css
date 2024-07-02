@@ -72,6 +72,33 @@ footer {
     height: 24px;
 }
 
+/* プロフィール画像と詳細 */
+#about {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.profile-details dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-details dd {
+    margin: 0 0 10px 0;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 600px) {
     nav ul li {
