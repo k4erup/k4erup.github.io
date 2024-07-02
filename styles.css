@@ -50,23 +50,26 @@ section {
 }
 
 footer {
-    background-color: #b6de90;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    padding: 20px 0;
     width: 100%;
+    position: relative;
 }
 
 .footer-social {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
+
 .footer-social a {
     color: white;
     text-decoration: none;
 }
+
 .footer-social img {
     width: 24px;
     height: 24px;
