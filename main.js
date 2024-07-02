@@ -6,5 +6,5 @@ window.onload = function() {
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-    document.getElementById('age').textContent = `年齢: ${age}歳`;
+    document.getElementById('age').textContent = `${age}歳`;
 };
