@@ -58,6 +58,10 @@ footer {
     position: relative;
 }
 
+img {
+  object-fit: contain;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
