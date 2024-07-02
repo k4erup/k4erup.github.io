@@ -29,7 +29,7 @@ nav ul li {
 
 nav ul li a {
     color: #333;
-    text-decoration: none; /* ここでアンダーラインを削除 */
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -59,7 +59,7 @@ footer {
 }
 
 img {
-  object-fit: contain;
+    object-fit: contain;
 }
 
 .footer-social {
@@ -76,13 +76,14 @@ img {
 
 .footer-social img {
     width: 24px;
-    height: auto; /* ここを変更 */
+    height: auto; /* 高さを自動に設定してアスペクト比を維持 */
+    object-fit: contain; /* 画像が枠内に収まるようにする */
 }
 
 /* プロフィール画像と詳細 */
 .profile-container {
     display: flex;
-    align-items: flex-start; /* 左揃え */
+    align-items: flex-start;
 }
 
 .profile-img {
@@ -149,5 +150,5 @@ button:hover {
 }
 
 a {
-    text-decoration: none; /* すべてのリンクからアンダーラインを削除 */
+    text-decoration: none;
 }
