@@ -1,84 +1,136 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>かえるのホームページ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <h1>かえるのホームページ</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">プロフィール</a></li>
-                <li><a href="#services">アカウント一覧</a></li>
-                <li><a href="blog.html">ブログ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>プロフィール</h2>
-            <img src="profile-picture.jpg" alt="プロフィール画像" class="profile-img">
-            <p>デレステをプレイしています。</p>
-            <dl class="profile-details">
-                <dt>誕生日</dt>
-                <dd>2003年9月11日</dd>
-                <dt>年齢</dt>
-                <dd id="age">計算中...</dd>
-                <dt>出身地</dt>
-                <dd>福岡県</dd>
-            </dl>
-        </section>
-        <section id="services">
-            <h2>アカウント一覧</h2>
-            <ul>
-                <li>
-                    <a href="https://twitter.com/k4erup" target="_blank" rel="noopener noreferrer"><b>Twitter</b></a>
-                    <p>主にデレステの話や、望月聖ちゃんに関する話をしています。</p>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@k4erup" target="_blank" rel="noopener noreferrer"><b>YouTube</b></a>
-                    <p>デレステのMVを4K60fpsで投稿しています。</p>
-                </li>
-                <li>
-                    <b>Discord - @k4erup</b>
-                    <p>DiscordのIDです。よく利用しているのでリアクションは早いです。</p>
-                </li>
-                <li>
-                    <a href="https://discord.gg/gHZYWQ33pA" target="_blank" rel="noopener noreferrer"><b>かえるのDiscordサーバー</b></a>
-                    <p>かえるのDiscordサーバーです。主にデレステの話や、望月聖ちゃんに関する話をしています。参加通知が表示されないようにしているので、試しに入ってみるだけでもOKです。</p>
-                </li>
-                <li>
-                    <b>デレステ ユーザーID - 507564776</b>
-                    <p>同僚申請お気軽にどうぞ。枠が空いてなくて入れられないときもあります。</p>
-                </li>
-            </ul>
-        </section>
-        <section id="blog">
-            <h2><a href="blog.html">ブログ</a></h2>
-            <article>
-                <h3>準備中…</h3>
-                <p></p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-social">
-            <a href="https://twitter.com/k4erup" target="_blank" rel="noopener noreferrer">
-                <img src="twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://www.youtube.com/@k4erup" target="_blank" rel="noopener noreferrer">
-                <img src="youtube-icon.png" alt="YouTube">
-            </a>
-            <a href="https://discord.gg/gHZYWQ33pA" target="_blank" rel="noopener noreferrer">
-                <img src="discord-icon.png" alt="Discord">
-            </a>
-        </div>
-        <p>&copy; 2024 k4erup. This site is licensed under the MIT License.</p>
-    </footer>
-    <script src="main.js"></script>
-</body>
-</html>
+/* 基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3ebf5;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b6de90;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none; /* ここでアンダーラインを削除 */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #eef3d5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* プロフィール画像と詳細 */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.profile-details dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-details dd {
+    margin: 0 0 10px 0;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+/* インタラクティブ要素 */
+button {
+    background-color: #b6de90;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: black;
+    border: 2px solid #b6de90;
+}
+
+a {
+    text-decoration: none; /* すべてのリンクからアンダーラインを削除 */
+}
