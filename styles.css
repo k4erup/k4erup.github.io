@@ -89,15 +89,18 @@ footer {
     width: fit-content;
 }
 
+.profile-details dt, .profile-details dd {
+    text-align: left; /* dtとdd両方に左揃えを適用 */
+    margin: 0;
+}
+
 .profile-details dt {
     font-weight: bold;
     margin-top: 10px;
-    text-align: left;
 }
 
 .profile-details dd {
     margin: 0 0 10px 0;
-    text-align: left;
 }
 
 /* レスポンシブデザイン */
