@@ -29,7 +29,7 @@ nav ul li {
 
 nav ul li a {
     color: #333;
-    text-decoration: none;
+    text-decoration: none; /* ここでアンダーラインを削除 */
 }
 
 nav ul li a:hover {
@@ -76,8 +76,19 @@ img {
 
 .footer-social img {
     width: 24px;
-    height: auto; /* 高さを自動に設定してアスペクト比を維持 */
-    object-fit: contain; /* 画像が枠内に収まるようにする */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Twitterアイコンの個別スタイル */
+.footer-social a.twitter {
+    display: inline-block;
+    margin-top: -10px; /* 位置を上に移動 */
+}
+
+.footer-social a.twitter img {
+    width: 32px; /* サイズを大きくする */
+    height: auto;
 }
 
 /* プロフィール画像と詳細 */
@@ -150,5 +161,5 @@ button:hover {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* すべてのリンクからアンダーラインを削除 */
 }
