@@ -73,10 +73,6 @@ footer {
 }
 
 /* プロフィール画像と詳細 */
-#about {
-    text-align: center;
-}
-
 .profile-img {
     width: 150px;
     height: 150px;
