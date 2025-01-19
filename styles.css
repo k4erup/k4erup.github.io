@@ -80,12 +80,6 @@ img {
     object-fit: contain;
 }
 
-/* Twitterアイコンの個別スタイル */
-//.footer-social a.twitter img {
-//  width: 32px; /* サイズを大きくする */
-//  height: auto;
-//  margin-top: -8px; /* 位置を上に移動 */
-//}
 
 /* プロフィール画像と詳細 */
 .profile-container {
