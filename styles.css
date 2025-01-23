@@ -1,39 +1,23 @@
-/* 基本スタイル */
+body, h1, h2, p, ul, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #b7dde1;
     color: #333;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #b4f0a0;
-    color: #333;
-    padding: 10px 0;
+    padding: 1rem 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none; /* ここでアンダーラインを削除 */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -49,108 +33,22 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    position: relative;
-}
-
-img {
-    object-fit: contain;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.footer-social a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-social img {
-    width: 24px;
-    height: auto;
-    object-fit: contain;
-}
-
-
-/* プロフィール画像と詳細 */
 .profile-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-right: 20px;
+    object-fit: cover;
 }
 
-.profile-details {
-    margin: 0;
-}
-
-.profile-details dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.profile-details dd {
-    margin: 0 0 10px 0;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-img {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-}
-
-/* インタラクティブ要素 */
-button {
-    background-color: #b4f0a0;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-button:hover {
+footer {
     background-color: #333;
-    color: black;
-    border: 2px solid #b4f0a0;
-}
-
-a,a:visited {
-    text-decoration: none; /* すべてのリンクからアンダーラインを削除 */
-    color: #0071d1;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
